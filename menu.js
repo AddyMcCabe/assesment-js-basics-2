@@ -30,7 +30,15 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'cheese',
+    price: 12,
+    category: 'entree',
+    popularity: 10,
+    rating: 10,
+    tags: ['kids', 'vegiterian', 'cheap']
+
+}
 
 
 
@@ -42,7 +50,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+// console.log(pizza.popularity)
 
 
 /*
@@ -52,7 +60,7 @@
     get the value.
 */
 
-//CODE HERE
+// console.log(pizza.tags[1])
 
 
 /*
@@ -62,7 +70,7 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+
 
 
 /*
