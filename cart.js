@@ -61,9 +61,7 @@ const summedPrice = cart.reduce(function(acc, curr ){
 */
 
 function calcFinalPrice(carTotal, couponValue, tax){
-    if(+num1 && +num2){
-        num1 = +num1
-        num2 = +num2
+    
 }
 
 

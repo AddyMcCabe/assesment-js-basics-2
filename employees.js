@@ -19,10 +19,10 @@
     stored on the object.
 */
 
-class employee{
+class Employee{
     constructor(name, shifts){
-        this.name = name,
-        this.shifts = shifts
+        this.name = name;
+        this.shifts = shifts;
     }
     getSchedule(){
         console.log(`${this.name} works on ${this.shift}`)}
@@ -41,18 +41,14 @@ class employee{
     shifts: weekday mornings, weekday afternoons
 */
 
-const empOne = {
-    name: 'jess',
-    shifts: 'weekday mornings, weekday afternoons'
-
-}
+const empOne = new Employee('Jess', ['weekday mornings', 'weekday afternoons'])
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-getSchedule(empOne)
+empOne.getSchedule();
 
 
 /*
@@ -67,7 +63,7 @@ getSchedule(empOne)
     dot or bracket notation.
 */
 
-//CODE HERE
+const empTwo = {...empOne, name: 'Nick'};
 
 
 
@@ -94,7 +90,18 @@ getSchedule(empOne)
     the employees array. 
 */
 
-//CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts );
+        this.employees = employees;
+    }
+    getEmployees(){
+        console.log(`${this.name} manages ${this.employees}`);
+    }
+    addEmployee(emp){
+        this.employees.push(emp);
+    }
+}
 
 
 
@@ -109,7 +116,7 @@ getSchedule(empOne)
     employees: Cece and Schmidt
 */
 
-//CODE HERE
+const manager = new Manager('Winston', ['weekday evenings', 'weekday evenings'], ['Cece, Schmidt']);
 
 
 /*
@@ -117,7 +124,7 @@ getSchedule(empOne)
     `manager` object.  
 */
 
-//CODE HERE
+manager.getEmployees();
 
 /*
     Call the `addEmployee` method on the 
@@ -125,7 +132,7 @@ getSchedule(empOne)
     'Coach' or whatever name you'd like.
 */
 
-//CODE HERE 
+manager.addEmployee('Coach');
 
 /*
     Call the `getEmployees` method on the
@@ -133,4 +140,4 @@ getSchedule(empOne)
     that an employee was added.
 */
 
-//CODE HERE
+manager.getEmployees();

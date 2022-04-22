@@ -95,7 +95,28 @@ const pizza = {
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+    {
+      name: 'cheese',
+      price: '3.99',
+      popularity: 1,
+      rating: 10,
+      tags: ['kids', 'vegitarian', 'cheap']
+    }, 
+    {
+        name: 'peperoni',
+        price: '4.99',
+        popularity: 2,
+        rating: 10,
+        tags: ['kids', 'classic', 'popular']
+    }, 
+    {
+        name: 'hawiian',
+        price: '4.99',
+        popularity: 5,
+        rating: 4.5,
+        tags: ['bold', 'classic', 'controversial']
+    }];
 
 
 
@@ -111,7 +132,13 @@ const pizza = {
     your food objects has.
 */
 
-//CODE HERE
+const filteredFood = foodArr.filter((food) => {
+   if(food.tags.includes('classic')) {
+    return food;
+   }
+})
+
+
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
@@ -156,7 +183,16 @@ const pizza = {
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) => {
+    const filteredArray = foodArr.filter((food) => {
+        if(type === 'above') {
+            return food[property] >= number;
+        } else if(type === 'above') {
+            return food[property] <= number;
+        }
+    })
+    return filteredArray;
+}
 
 
 /*
@@ -166,4 +202,4 @@ const pizza = {
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+console.log(filterByProperty('price', 4, 'above'));
