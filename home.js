@@ -21,8 +21,11 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
+  greetuser = (username) => {
+      return `Welcome back ${username}`;
+  }
 
+//   console.log(greetuser('Addy'))
 
 
 
@@ -51,8 +54,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+// function canWeDeliver(zipcode){
+//     for(let i = 0; i < deliveryAreaZipCodes.length; i++)
+//     if(zipcode === deliveryAreaZipCodes[i]){
+//         console.log('Youre in our deliver zone!')
+//     } else if(zipcode !== deliveryAreaZipCodes[i]) {
+//         console.log('Sorry, we cant deliver to that address')
+//     }
 
-
+// }
+// canWeDeliver(8000)
 /* 
     Problem 2 Continued
 
@@ -70,8 +81,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+// function canWeDeliver(zipcode){
+//     if(deliveryAreaZipCodes.includes(zipcode)){
+//         console.log('Youre in our delivery zone!')
+//     } else {
+//         console.log('Sorry, we cant deliver to that address')
+//     }
+// }
 
+// canWeDeliver(8000)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -106,8 +124,8 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
+deals.replace(15, 10);
+console.log(deals)
 
 
 /*

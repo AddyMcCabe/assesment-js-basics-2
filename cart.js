@@ -35,7 +35,14 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce(function(acc, curr ){
+    console.log(curr.amount)
+    return acc + curr.amount
+}
+)
+
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,7 +60,11 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+function calcFinalPrice(carTotal, couponValue, tax){
+    if(+num1 && +num2){
+        num1 = +num1
+        num2 = +num2
+}
 
 
 

@@ -19,7 +19,15 @@
     stored on the object.
 */
 
-//CODE HERE
+class employee{
+    constructor(name, shifts){
+        this.name = name,
+        this.shifts = shifts
+    }
+    getSchedule(){
+        console.log(`${this.name} works on ${this.shift}`)}
+    }
+    
 
 
 
@@ -33,14 +41,18 @@
     shifts: weekday mornings, weekday afternoons
 */
 
-//CODE HERE
+const empOne = {
+    name: 'jess',
+    shifts: 'weekday mornings, weekday afternoons'
+
+}
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-//CODE HERE
+getSchedule(empOne)
 
 
 /*
