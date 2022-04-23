@@ -49,7 +49,7 @@ const pizza = {
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
-
+// CODE HERE
 // console.log(pizza.popularity)
 
 
@@ -59,7 +59,8 @@ const pizza = {
     Use a combination of dots and brackets to
     get the value.
 */
-
+ 
+// CODE HERE
 // console.log(pizza.tags[1])
 
 
@@ -70,7 +71,9 @@ const pizza = {
     Print the value of your new price variable.
 */
 
-
+// CODE HERE
+  let {price} = price;
+  console.log(price);
 
 
 /*
@@ -81,7 +84,9 @@ const pizza = {
 */
 
 //CODE HERE
-
+ 
+let {category} = category;
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 

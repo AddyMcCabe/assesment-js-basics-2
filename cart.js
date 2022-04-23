@@ -33,14 +33,12 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
-const summedPrice = cart.reduce(function(acc, curr ){
-    
-}
-)
 
 
+const summedPrice = cart.reduce(function(acc, curr){
+    return acc + curr.price 
+},0)
+console.log(summedPrice)
 
 
 
@@ -59,9 +57,9 @@ const summedPrice = cart.reduce(function(acc, curr ){
     decimals, for example: .06 for a 6% tax.
 */
 
-function calcFinalPrice(cartTotal, couponValue, tax){
-    return ((tax + 1) * cartTotal) -= couponValue
-}
+// function calcFinalPrice(cartTotal, couponValue, tax){
+//     return ((tax + 1) * cartTotal) -= couponValue
+// }
 
 
 
