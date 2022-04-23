@@ -36,8 +36,7 @@ const cart = [
 //CODE HERE
 
 const summedPrice = cart.reduce(function(acc, curr ){
-    console.log(curr.amount)
-    return acc + curr.amount
+    
 }
 )
 
@@ -60,8 +59,8 @@ const summedPrice = cart.reduce(function(acc, curr ){
     decimals, for example: .06 for a 6% tax.
 */
 
-function calcFinalPrice(carTotal, couponValue, tax){
-    
+function calcFinalPrice(cartTotal, couponValue, tax){
+    return ((tax + 1) * cartTotal) -= couponValue
 }
 
 
@@ -87,7 +86,11 @@ function calcFinalPrice(carTotal, couponValue, tax){
 */
 
 /*
-    TEXT ANSWER HERE
+    Costumer:
+    customer name: this is one of the most important properties because the resturaunt needs to be able to indentify which customer is which. the data type should be a string because we want an actually name to put in for the value.
+    order number: this should be another property because the resturaunt is going to want to be able to access the individuals order from there name. you dont want to have to remember what Bob ordered if he calls back with a problem with his order. the data type for this should be a number becuase the easiest way to track the orders throughout the day is numerically.
+    phone number: this should also be a property because the resturant will be able to know returning customers from their stored data, as well as being able to contact customers if they end up needing to relay something to them. the data type should be numbers because the expected value will be a phone number which is obviously numbers.
+    payment method: this could also be a useful property to have because cash and card payments will proccess differently it could help if there are any shortages of problems at the end of the day to be able to go back and account for each transaction and see weather it was cash or card. the data type for this should be a string because we would want to see the actual word 'card' or 'cash' to differentiate between the two
 
 */
 
@@ -96,4 +99,9 @@ function calcFinalPrice(carTotal, couponValue, tax){
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    name: 'Addy',
+    order: 56,
+    phone: 5554442222,
+    payment: 'cash'
+}

@@ -202,4 +202,4 @@ const filterByProperty = (property, number, type) => {
     You'll have to console.log to see the filtered array
 */
 
-console.log(filterByProperty('price', 4, 'above'));
+console.log(filterByProperty('price', 3.00, 'above'));
